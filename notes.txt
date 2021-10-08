@@ -1,5 +1,3 @@
-Software Development Plan
-
 1. Planning 
 
     a. Goal
@@ -16,7 +14,32 @@ Software Development Plan
         -----> GET CLIENTS
 
     b. Project Scope + Contract
+    
     c. Sitemap + Wireframe
+
+        - NavBar
+            - Logo
+            
+            Links -------------------------------------------------------------
+            - Home
+            - Services
+            - About me
+            - Contact
+            -------------------------------------------------------------------
+            - Dark Mode & Light Mode switch
+            - Language Switch
+
+            Page Structure ----------------------------------------------------
+            - Hero 
+            - Services -> Cards
+            - About me
+                - Skills -> List
+            - Example Projects -> List
+            - Testimonials -> Carousel
+            - Contact Form 
+
+    
+
     
 2. Ideas + Features
 
@@ -25,6 +48,9 @@ Software Development Plan
     - 
 
 3. Content + SEO
+
+    
+    
 4. Moodboards / Inspiration / Style
 5. Visual Design
 6. Development
@@ -41,5 +67,4 @@ Software Development Plan
 7. Documentation
 8. Testing / Review
 9. Deployment
-10. Launch
-11. Maintenance + Upsell
++  Maintenance + Upsell
