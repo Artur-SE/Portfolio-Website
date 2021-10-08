@@ -1,0 +1,45 @@
+Software Development Plan
+
+1. Planning 
+
+    a. Goal
+        - Demonstrate Portfolio
+        - Build trust 
+        - Lead generation
+        - Call to action -> Contact me!
+        - Show how i can help them making more money
+            - How - A clear benefit heading
+            - Why - Client testimonials
+            - What - Examples of past work
+            - Where - Clear Call-to-Action
+        - Services and Packages
+        -----> GET CLIENTS
+
+    b. Project Scope + Contract
+    c. Sitemap + Wireframe
+    
+2. Ideas + Features
+
+    - Dark & Light Mode
+    - 3 Languages
+    - 
+
+3. Content + SEO
+4. Moodboards / Inspiration / Style
+5. Visual Design
+6. Development
+    a. Scope
+    b. Database Modeling
+    c. API Endpoint Planning
+    d. Backend Build
+    e. Backend Testing
+    f. Wireframing/Sketches
+    g. Component Planning
+    h. Frontend Build
+    i. Frontend Testing
+
+7. Documentation
+8. Testing / Review
+9. Deployment
+10. Launch
+11. Maintenance + Upsell
