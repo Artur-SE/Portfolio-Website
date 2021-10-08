@@ -1,6 +1,7 @@
 1. Planning 
 
     a. Goal
+        - NO HARDCODING
         - Demonstrate Portfolio
         - Build trust 
         - Lead generation
@@ -19,13 +20,10 @@
 
         - NavBar
             - Logo
-            
-            Links -------------------------------------------------------------
             - Home
             - Services
             - About me
             - Contact
-            -------------------------------------------------------------------
             - Dark Mode & Light Mode switch
             - Language Switch
 
@@ -37,25 +35,24 @@
             - Example Projects -> List
             - Testimonials -> Carousel
             - Contact Form 
-
-    
-
+            - Q&A
+            -------------------------------------------------------------------
     
 2. Ideas + Features
 
     - Dark & Light Mode
     - 3 Languages
-    - 
 
 3. Content + SEO
-
-    
-    
 4. Moodboards / Inspiration / Style
 5. Visual Design
 6. Development
     a. Scope
     b. Database Modeling
+        - Services          = [{image, name, description}]
+        - Skills            = [{image, name, description}]
+        - Example Projects  = [{image, name, use case, description}]
+        - Testimonials      = [{image,name,message}]
     c. API Endpoint Planning
     d. Backend Build
     e. Backend Testing
