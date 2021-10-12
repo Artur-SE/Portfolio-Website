@@ -1,6 +1,10 @@
 :root {
-  --textColor: red;
-  --backGround: blue;
+  --backgroundColor1: #27292e;
+  --backgroundColor2: #35363b;
+  --primaryColor: #07aaf5;
+  --secondaryColor: #f44459;
+  --textColor1: #7c7e81;
+  --textColor2: #737374;
 }
 
 body {
