@@ -11,13 +11,13 @@ const Navbar = () => {
   // State ----------------------------------------------------------------------
 
   const [showDropDown, setShowNavigation] = useState(false);
-  // ----------------------------------------------------------------------------
+  // --------------------------------------------------------------------------
 
   const toggleNavigation = () => {
     setShowNavigation(!showDropDown);
   };
 
-  // Return ---------------------------------------------------------------------
+  // Return -------------------------------------------------------------------
 
   return (
     <StyledNavbar>
@@ -56,12 +56,14 @@ const Navbar = () => {
       </nav>
     </StyledNavbar>
   );
-  // ----------------------------------------------------------------------------
+  // --------------------------------------------------------------------------
 };
 
-// Styled Components
+// Styled Component -----------------------------------------------------------
 
 const StyledNavbar = styled.section`
+  position: fixed;
+  width: 100%;
   .container {
     background-color: var(--backgroundColor2);
   }
@@ -69,7 +71,7 @@ const StyledNavbar = styled.section`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
-    height: 3rem;
+    height: 2.5rem;
     max-width: var(--maxWidth);
     margin: 0 auto;
   }
@@ -87,19 +89,22 @@ const StyledNavbar = styled.section`
 
   .nav-links-mobile {
     background-color: var(--backgroundColor2);
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      text-align: center;
-    }
-    li {
-      color: var(--textColor1);
-      padding: 0.7rem 0;
-    }
+    position: absolute;
+    width: 100%;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+  }
+  li {
+    color: var(--textColor1);
+    padding: 0.7rem 0;
   }
 
   /* Widescreen View ---------------------------------------------------------- */
+
   @media (min-width: 1023px) {
     .navIcon {
       display: none;
@@ -114,12 +119,12 @@ const StyledNavbar = styled.section`
       li {
         color: var(--textColor1);
         list-style: none;
-        padding: 0 1rem;
+        padding-right: 2rem;
       }
     }
   }
   /* -------------------------------------------------------------------------- */
 `;
-// ----------------------------------------------------------------------------
 
+// ----------------------------------------------------------------------------
 export default Navbar;

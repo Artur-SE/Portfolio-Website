@@ -29,10 +29,12 @@ const Home = () => {
   // --------------------------------------------------------------------------
 };
 
+// Styled Component -----------------------------------------------------------
+
 const StyledHero = styled.section`
   max-width: 600px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 2rem 1rem;
 
   .container {
     max-width: var(--maxWidth);
@@ -41,7 +43,7 @@ const StyledHero = styled.section`
   }
 
   .headline {
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     color: var(--textColor1);
   }
 
@@ -49,6 +51,16 @@ const StyledHero = styled.section`
     width: 80%;
     padding: 3rem 0;
   }
+
+  /* Widescreen View ---------------------------------------------------------- */
+
+  @media (min-width: 1023px) {
+    max-width: 900px;
+    .btn-primary {
+      font-size: 1.5rem;
+    }
+  }
+  /* -------------------------------------------------------------------------- */
 `;
 
 export default Home;
