@@ -5,15 +5,20 @@
   --secondaryColor: #f44459;
   --textColor1: #d4d4d5;
   --textColor2: #7e8388;
+  --maxWidth: 1200px;
 }
 
 html {
   background-color: var(--backgroundColor1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,4 +39,17 @@ p {
 }
 span {
   color: var(--primaryColor);
+}
+
+.btn-primary {
+  background-color: var(--primaryColor);
+  color: black;
+  border-radius: 10px;
+  border: none;
+  padding: 0.4rem 1rem;
+  margin: 1rem;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
