@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // Styling
 import styled from "styled-components";
@@ -8,10 +8,32 @@ import Logo from "../assets/logo.svg";
 import navIcon from "../assets/navIcon.svg";
 
 const Navbar = () => {
+  // State ----------------------------------------------------------------------
+  const [showNavigation, setShowNavigation] = useState(false);
+  // ----------------------------------------------------------------------------
+
+  const toggleNavigation = () => {
+    setShowNavigation(!showNavigation);
+  };
+
   return (
     <StyledNavbar>
       <img src={Logo} alt="Smart Development" className="logo" />
-      <img src={navIcon} alt="navIcon" className="navIcon" />
+      <img
+        onClick={toggleNavigation}
+        src={navIcon}
+        alt="navIcon"
+        className="navIcon"
+      />
+      {showNavigation && (
+        <ul>
+          <li>Home</li>
+          <li>Features</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Kontakt</li>
+        </ul>
+      )}
     </StyledNavbar>
   );
 };
@@ -27,7 +49,7 @@ const StyledNavbar = styled.section`
     width: 15rem;
   }
   .navIcon {
-    width: 2.5rem;
+    width: 2rem;
   }
 `;
 
