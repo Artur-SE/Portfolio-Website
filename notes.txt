@@ -30,9 +30,10 @@
             Page Structure ----------------------------------------------------
             - Hero 
             - Services -> Cards
+                - More Info Modal
             - About me
                 - Skills -> List
-            - Example Projects -> List
+            - Feature Ideas for the clients -> List
             - Testimonials -> Carousel
             - Contact Form 
             - Q&A
