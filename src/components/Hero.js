@@ -32,8 +32,16 @@ const Home = () => {
 // Styled Component -----------------------------------------------------------
 
 const StyledHero = styled.section`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
   img {
     max-width: 80%;
+    margin: 2rem 0 3rem 0;
   }
 `;
 

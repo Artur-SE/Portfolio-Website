@@ -1,11 +1,26 @@
 import React from "react";
 
+// Styling
+import styled from "styled-components";
+
+// Assets
+import logo from "../assets/logo.svg";
+
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <StyledFooter>
+      <div className="container">
+        <img src={logo} alt="" />
+        <p>Impressum</p>
+        <p>Datenschutz</p>
+      </div>
+    </StyledFooter>
   );
 };
+
+const StyledFooter = styled.section`
+  background-color: var(--backgroundColor2);
+  padding: 1rem;
+`;
 
 export default Footer;

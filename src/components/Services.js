@@ -25,7 +25,9 @@ const Services = () => {
 
 // Styled Component -----------------------------------------------------------
 
-const StyledServices = styled.section``;
+const StyledServices = styled.section`
+  margin-top: 0;
+`;
 // ----------------------------------------------------------------------------
 
 export default Services;
