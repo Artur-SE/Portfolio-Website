@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <StyledNavbar>
-      <nav className="container">
+      <nav>
         <div className="navbar">
           <img src={logo} alt="Smart Development" className="logo" />
 
@@ -61,13 +61,13 @@ const Navbar = () => {
 
 // Styled Component -----------------------------------------------------------
 
-const StyledNavbar = styled.section`
+const StyledNavbar = styled.nav`
   position: fixed;
+  top: 0;
   width: 100%;
-  .container {
-    background-color: var(--backgroundColor2);
-  }
+
   .navbar {
+    background-color: var(--backgroundColor2);
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 1rem;
@@ -126,5 +126,4 @@ const StyledNavbar = styled.section`
   /* -------------------------------------------------------------------------- */
 `;
 
-// ----------------------------------------------------------------------------
 export default Navbar;

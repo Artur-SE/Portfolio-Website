@@ -1,3 +1,9 @@
+/* 
+===============
+Global Styling
+===============
+*/
+
 :root {
   --backgroundColor1: #27292e;
   --backgroundColor2: #35363b;
@@ -5,7 +11,6 @@
   --secondaryColor: #f44459;
   --textColor1: #d4d4d5;
   --textColor2: #7e8388;
-  --maxWidth: 1200px;
 }
 
 html {
@@ -26,16 +31,20 @@ body {
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
   color: var(--textColor1);
+  font-weight: 500;
+  line-height: 1.5em;
 }
 
-p {
+p,
+h3 {
+  font-weight: 500;
   color: var(--textColor2);
   font-size: 1.2rem;
+  line-height: 1.5em;
 }
 span {
   color: var(--primaryColor);
@@ -47,9 +56,43 @@ span {
   border-radius: 10px;
   border: none;
   padding: 0.4rem 1rem;
-  margin: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-secondary {
+  background-color: var(--secondaryColor);
+  color: var(--textColor1);
+  border-radius: 10px;
+  border: none;
+  padding: 0.4rem 1rem;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.headline {
+  margin-top: 6rem;
+}
+
+.underline {
+  height: 5px;
+  width: 60px;
+  background-color: var(--secondaryColor);
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 3em;
+}
+
+.container {
+  text-align: center;
+}
+
+section {
+  margin-top: 5rem;
+  text-align: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
