@@ -46,6 +46,9 @@ const StyledHero = styled.section`
   h1 {
     margin-top: 10vh;
   }
+  button {
+    margin-top: 0;
+  }
 `;
 
 export default Home;

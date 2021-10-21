@@ -23,8 +23,8 @@ const AboutMe = () => {
           realisieren und der ganzen Welt zugänglich zu machen.
           <br />
           <br />
-          Ein angenehmens Arbeiten und die Zufriedenheit unseren Klienten ist
-          uns sehr wichtig.
+          Ein angenehmes Arbeiten und die Zufriedenheit unseren Klienten ist uns
+          sehr wichtig.
           <br />
           <br />
           Weshalb wir einen großen Wert darauf legen, die Zielsetzung und
