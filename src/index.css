@@ -10,7 +10,7 @@ Global Styling
   --primaryColor: #07aaf5;
   --secondaryColor: #f44459;
   --textColor1: #d4d4d5;
-  --textColor2: #7e8388;
+  --textColor2: #949aa0;
   --maxWidth: 1300px;
 }
 
@@ -87,7 +87,7 @@ section {
 
 .btn-secondary {
   background-color: var(--secondaryColor);
-  color: var(--textColor1);
+  color: white;
   border-radius: 10px;
   border: none;
   margin-top: 2rem;

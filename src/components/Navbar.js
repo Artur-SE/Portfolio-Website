@@ -48,8 +48,8 @@ const Navbar = () => {
               <li>Home</li>
               <li>Features</li>
               <li>Services</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li>Über uns</li>
+              <li>Kontakt</li>
             </ul>
           )}
         </div>

@@ -3,12 +3,14 @@ import React from "react";
 // Styling
 import styled from "styled-components";
 
-const Service = ({ name, description, image }) => {
+const Service = ({ name, description1, description2, image }) => {
   return (
     <StyledService>
       <img src={image} alt={name} />
       <h2>{name}</h2>
-      <p>{description}</p>
+      <p>{description1}</p>
+      <br />
+      <p>{description2}</p>
     </StyledService>
   );
 };
