@@ -13,12 +13,20 @@ function App() {
     <div>
       <Navbar />
       <StyledApp>
-        <Hero />
-        <Services />
-        <AboutMe />
-        <Contact />
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="about">
+          <AboutMe />
+        </section>
+        <section id="contact">
+          <Contact />
+        </section>
       </StyledApp>
-      <Footer />
+      <Footer id="footer" />
     </div>
   );
 }

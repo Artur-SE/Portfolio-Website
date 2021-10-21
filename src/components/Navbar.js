@@ -13,8 +13,9 @@ const Navbar = () => {
   const [showDropDown, setShowNavigation] = useState(false);
   // --------------------------------------------------------------------------
 
-  const toggleNavigation = () => {
+  const toggleNavigation = (e) => {
     setShowNavigation(!showDropDown);
+    console.log(e.target.value);
   };
 
   // Return -------------------------------------------------------------------
@@ -32,24 +33,40 @@ const Navbar = () => {
             className="navIcon"
           />
           <ul className="nav-links-wideScreen">
-            <li>Home</li>
-            <li>Features</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>
-              <span>Contact</span>
-            </li>
+            <a href="#home">
+              <li>Home</li>
+            </a>
+            <a href="#services">
+              <li>Services</li>
+            </a>
+            <a href="#about">
+              <li>Über uns</li>
+            </a>
+            <a href="#contact">
+              <li>
+                <span>Kontakt</span>
+              </li>
+            </a>
           </ul>
         </div>
 
         <div className="nav-links-mobile">
           {showDropDown && (
-            <ul>
-              <li>Home</li>
-              <li>Features</li>
-              <li>Services</li>
-              <li>Über uns</li>
-              <li>Kontakt</li>
+            <ul onClick={() => setShowNavigation(false)}>
+              <a href="#home">
+                <li>Home</li>
+              </a>
+              <a href="#services">
+                <li>Services</li>
+              </a>
+              <a href="#about">
+                <li>Über uns</li>
+              </a>
+              <a href="#contact">
+                <li>
+                  <span>Kontakt</span>
+                </li>
+              </a>
             </ul>
           )}
         </div>
@@ -64,7 +81,6 @@ const Navbar = () => {
 const StyledNavbar = styled.nav`
   z-index: 1;
   position: fixed;
-  top: 0;
   width: 100%;
   background-color: var(--backgroundColor2);
 

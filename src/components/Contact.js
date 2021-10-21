@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Contact = () => {
+  // Return -------------------------------------------------------------------
   return (
     <StyledContact>
       <div className="container">
@@ -38,7 +39,10 @@ const Contact = () => {
       </div>
     </StyledContact>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledContact = styled.section`
   input,
@@ -54,5 +58,6 @@ const StyledContact = styled.section`
     color: var(--textColor1);
   }
 `;
+// --------------------------------------------------------------------------
 
 export default Contact;

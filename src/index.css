@@ -15,6 +15,7 @@ Global Styling
 }
 
 html {
+  scroll-behavior: smooth;
   background-color: var(--backgroundColor1);
   margin: 0;
   padding: 0;
@@ -65,7 +66,6 @@ span {
 }
 
 section {
-  margin-top: 5rem;
   text-align: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -83,6 +83,7 @@ section {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -96,6 +97,7 @@ section {
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
 }
 
 .headline {
@@ -113,4 +115,9 @@ section {
 
 .container {
   text-align: center;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
 }

@@ -23,7 +23,9 @@ const Home = () => {
         </h3>
         <img src={heroImage} alt="responsive design" />
       </div>
-      <button className="btn-primary">Kostenlose Beratung</button>
+      <a href="#contact">
+        <button className="btn-primary">Kostenlose Beratung</button>
+      </a>
     </StyledHero>
   );
   // --------------------------------------------------------------------------
@@ -43,12 +45,15 @@ const StyledHero = styled.section`
     max-width: 80%;
     margin: 2rem 0 3rem 0;
   }
+
   h1 {
     margin-top: 10vh;
   }
+
   button {
     margin-top: 0;
   }
 `;
+// --------------------------------------------------------------------------
 
 export default Home;

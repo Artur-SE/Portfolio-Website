@@ -5,6 +5,7 @@ import artur from "../assets/artur 1.png";
 import styled from "styled-components";
 
 const AboutMe = () => {
+  // Return -------------------------------------------------------------------
   return (
     <StyledAboutMe>
       <div className="container">
@@ -39,11 +40,16 @@ const AboutMe = () => {
           <br />
           Wir freuen uns auf Sie!
         </p>
-        <button class="btn-primary">Kostenlose Beratung</button>
+        <a href="#contact">
+          <button className="btn-primary">Kostenlose Beratung</button>
+        </a>
       </div>
     </StyledAboutMe>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledAboutMe = styled.section`
   img {
@@ -60,5 +66,6 @@ const StyledAboutMe = styled.section`
     margin-bottom: 0;
   }
 `;
+// --------------------------------------------------------------------------
 
 export default AboutMe;

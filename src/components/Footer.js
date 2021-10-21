@@ -7,6 +7,7 @@ import styled from "styled-components";
 import logo from "../assets/logo.svg";
 
 const Footer = () => {
+  // Return -------------------------------------------------------------------
   return (
     <StyledFooter>
       <div className="container">
@@ -16,11 +17,15 @@ const Footer = () => {
       </div>
     </StyledFooter>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledFooter = styled.section`
   background-color: var(--backgroundColor2);
   padding: 1rem;
 `;
+// --------------------------------------------------------------------------
 
 export default Footer;
