@@ -47,8 +47,9 @@ const StyledContact = styled.section`
     background-color: var(--backgroundColor2);
     border: none;
     padding: 1rem;
-    width: 300px;
+    width: clamp(300px, 60vw, 600px);
   }
+
   label {
     color: var(--textColor1);
   }

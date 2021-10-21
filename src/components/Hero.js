@@ -43,6 +43,9 @@ const StyledHero = styled.section`
     max-width: 80%;
     margin: 2rem 0 3rem 0;
   }
+  h1 {
+    margin-top: 10vh;
+  }
 `;
 
 export default Home;

@@ -62,10 +62,16 @@ const Navbar = () => {
 // Styled Component -----------------------------------------------------------
 
 const StyledNavbar = styled.nav`
+  z-index: 1;
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: var(--backgroundColor2);
 
+  nav {
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+  }
   .navbar {
     background-color: var(--backgroundColor2);
     display: flex;

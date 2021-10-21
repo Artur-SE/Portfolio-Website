@@ -26,7 +26,13 @@ const Services = () => {
 // Styled Component -----------------------------------------------------------
 
 const StyledServices = styled.section`
-  margin-top: 0;
+  @media (min-width: 1023px) {
+    .services {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 `;
 // ----------------------------------------------------------------------------
 

@@ -7,7 +7,7 @@ const Service = ({ name, description, image }) => {
   return (
     <StyledService>
       <img src={image} alt={name} />
-      <h1>{name}</h1>
+      <h2>{name}</h2>
       <p>{description}</p>
     </StyledService>
   );
@@ -20,6 +20,7 @@ const StyledService = styled.div`
   img {
     position: relative;
     top: 60px;
+    height: 150px;
   }
   p {
     max-width: 400px;

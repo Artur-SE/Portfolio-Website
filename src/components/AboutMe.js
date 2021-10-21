@@ -11,7 +11,7 @@ const AboutMe = () => {
         <h1 className="headline">Ihr Ansprechpartner</h1>
         <div className="underline"></div>
         <img src={artur} alt="" />
-        <h1>Artur Klein</h1>
+        <h2 className="name">Artur Klein</h2>
         <button className="btn-secondary">Technologien</button>
         <p>
           Als erfahrener Verkäufer unterstützt Artur Sie dabei, Ihre Produkte &
@@ -48,6 +48,16 @@ const AboutMe = () => {
 const StyledAboutMe = styled.section`
   img {
     max-width: 200px;
+  }
+  h2 {
+    color: var(--textColor1);
+  }
+  p {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  .name {
+    margin-bottom: 0;
   }
 `;
 
