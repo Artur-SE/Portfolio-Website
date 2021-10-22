@@ -22,9 +22,11 @@ const Navbar = () => {
 
   return (
     <StyledNavbar>
-      <nav>
+      <nav className="container">
         <div className="navbar">
-          <img src={logo} alt="Smart Development" className="logo" />
+          <a href="#home">
+            <img src={logo} alt="Smart Development" className="logo" />
+          </a>
 
           <img
             onClick={toggleNavigation}
@@ -102,7 +104,7 @@ const StyledNavbar = styled.nav`
   }
 
   .logo {
-    width: 15rem;
+    width: 13rem;
   }
 
   .navIcon {

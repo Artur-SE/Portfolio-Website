@@ -6,15 +6,20 @@ import { services } from "../data/data";
 import styled from "styled-components";
 
 const Services = () => {
+  // State --------------------------------------------------------------------
+  // const [items, setServicesItems] = useState(services);
+  // --------------------------------------------------------------------------
+
   // Return -------------------------------------------------------------------
+
   return (
     <StyledServices>
       <div className="container">
         <h1 className="headline">Services</h1>
         <div className="underline"></div>
         <div className="services">
-          {services.map((service, index) => {
-            return <Service key={index} {...service} />;
+          {services.map((service) => {
+            return <Service key={service.id} {...service} />;
           })}
         </div>
       </div>
@@ -22,6 +27,7 @@ const Services = () => {
   );
   // --------------------------------------------------------------------------
 };
+
 // Styled Component -----------------------------------------------------------
 
 const StyledServices = styled.section`

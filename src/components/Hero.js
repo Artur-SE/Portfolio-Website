@@ -23,9 +23,11 @@ const Home = () => {
         </h3>
         <img src={heroImage} alt="responsive design" />
       </div>
-      <a href="#contact">
-        <button className="btn-primary">Kostenlose Beratung</button>
-      </a>
+      <div>
+        <a href="#contact">
+          <button className="btn-primary">Kostenlose Beratung</button>
+        </a>
+      </div>
     </StyledHero>
   );
   // --------------------------------------------------------------------------

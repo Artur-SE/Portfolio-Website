@@ -14,21 +14,21 @@ const Contact = () => {
           <label htmlFor="Name">Name</label>
           <br />
           <br />
-          <input type="text" />
+          <input required type="text" />
           <br />
           <br />
 
           <label htmlFor="E-mail">E-mail</label>
           <br />
           <br />
-          <input type="email" />
+          <input required type="email" />
           <br />
           <br />
 
           <label htmlFor="Name">Nachricht</label>
           <br />
           <br />
-          <textarea name="message" cols="30" rows="10"></textarea>
+          <textarea required name="message" cols="30" rows="10"></textarea>
           <br />
           <br />
 
