@@ -81,10 +81,10 @@ const StyledService = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    border: 2px solid var(--primaryColor);
+    /* border: 2px solid var(--primaryColor); */
     border-radius: 10px;
     overflow-y: auto;
-
+    box-shadow: 1px 5px 20px black;
     p {
       font-size: 1rem;
       line-height: 2rem;
