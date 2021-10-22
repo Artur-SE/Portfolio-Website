@@ -52,6 +52,7 @@ const StyledContact = styled.section`
     border: none;
     padding: 1rem;
     width: clamp(300px, 60vw, 600px);
+    resize: none;
   }
 
   label {

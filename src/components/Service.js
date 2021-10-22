@@ -88,6 +88,7 @@ const StyledService = styled.div`
     p {
       font-size: 1rem;
       line-height: 2rem;
+      margin-top: 2rem;
     }
   }
   @media (min-width: 1023px) {
