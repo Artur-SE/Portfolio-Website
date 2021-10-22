@@ -11,16 +11,17 @@ const Service = ({
   image,
 }) => {
   const [showModal, setShowModal] = useState(false);
-
   // Return -----------------------------------------------------------------
   return (
     <StyledService>
       <div className="service">
         <img src={image} alt={name} />
         <h2>{name}</h2>
-        <p>{description1}</p>
-        <br />
-        <p>{description2}</p>
+        <div>
+          <p>{description1}</p>
+          <br />
+          <p>{description2}</p>
+        </div>
       </div>
       <div>
         <button
@@ -32,13 +33,17 @@ const Service = ({
       </div>
       {showModal && (
         <div className="fullDescription">
-          <p>{fullDescription}</p>
-          <button
-            className="btn-secondary"
-            onClick={() => setShowModal(!showModal)}
-          >
-            Schließen
-          </button>
+          <div className="fullDescription-container">
+            <p>{fullDescription}</p>
+          </div>
+          <div>
+            <button
+              className="btn-secondary"
+              onClick={() => setShowModal(false)}
+            >
+              Schließen
+            </button>
+          </div>
         </div>
       )}
     </StyledService>
@@ -69,11 +74,31 @@ const StyledService = styled.div`
   .fullDescription {
     background-color: var(--backgroundColor2);
     position: fixed;
-    width: 80%;
-    height: 80%;
+    width: 90vw;
+    max-width: 90vw;
+    max-height: 70vh;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    border: 2px solid var(--primaryColor);
+    border-radius: 10px;
+    overflow-y: auto;
+
+    p {
+      font-size: 1rem;
+      line-height: 2rem;
+    }
+  }
+  @media (min-width: 1023px) {
+    p {
+      max-width: 600px;
+    }
+    .fullDescription {
+      padding: 3rem;
+      width: auto;
+      height: auto;
+    }
   }
 `;
 // --------------------------------------------------------------------------
