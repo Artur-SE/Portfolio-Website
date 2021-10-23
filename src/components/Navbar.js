@@ -125,6 +125,7 @@ const StyledNavbar = styled.nav`
   li {
     color: var(--textColor1);
     padding: 0.7rem 0;
+    transition-duration: 0.1s;
   }
 
   /* Widescreen View ---------------------------------------------------------- */
@@ -146,8 +147,15 @@ const StyledNavbar = styled.nav`
         padding-right: 2rem;
       }
     }
+
+    li:hover {
+      transform: scale(1.3);
+      overflow: hidden;
+    }
   }
   /* -------------------------------------------------------------------------- */
 `;
 
 export default Navbar;
+
+// https://www.youtube.com/watch?v=S-JyJCVx_4Y

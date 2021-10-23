@@ -8,9 +8,9 @@ Global Styling
   --backgroundColor1: #27292e;
   --backgroundColor2: #35363b;
   --primaryColor: #07aaf5;
-  --secondaryColor: #f44459;
-  --textColor1: #d4d4d5;
-  --textColor2: #949aa0;
+  --secondaryColor: #db2c40;
+  --textColor1: #ffffff;
+  --textColor2: #d4d4d5;
   --maxWidth: 1300px;
 }
 
@@ -71,12 +71,13 @@ section {
   padding-right: 0.5rem;
 }
 
+/* Buttons--------------------------------------------------------------------- */
 .btn-primary {
   background-color: var(--primaryColor);
   color: black;
   border-radius: 10px;
   border: none;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-size: 1.2rem;
@@ -84,6 +85,13 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
+  transition-duration: 0.1s;
+}
+.btn-primary:hover {
+  transform: scale(1.1);
+}
+.btn-primary:active {
+  transform: scale(0.9);
 }
 
 .btn-secondary {
@@ -93,12 +101,20 @@ section {
   border: none;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 0.4rem 1rem;
+  padding: 0.5rem 1rem;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
+  transition-duration: 0.1s;
 }
+.btn-secondary:hover {
+  transform: scale(1.1);
+}
+.btn-secondary:active {
+  transform: scale(0.9);
+}
+/* Buttons--------------------------------------------------------------------- */
 
 .headline {
   margin-top: 6rem;
@@ -114,7 +130,7 @@ section {
 }
 
 .container {
-  text-align: center;
+  /* text-align: center; */
 }
 
 a {

@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 // Assets
 import heroImage from "../assets/hero.svg";
+import HeroImage from "./HeroImage";
 
 const Home = () => {
   // Return -------------------------------------------------------------------
@@ -21,7 +22,8 @@ const Home = () => {
           <span> D</span>
           esigns und mehr...
         </h3>
-        <img src={heroImage} alt="responsive design" />
+        {/* <img src={heroImage} alt="responsive design" /> */}
+        <HeroImage />
       </div>
       <div>
         <a href="#contact">
@@ -37,14 +39,19 @@ const Home = () => {
 
 const StyledHero = styled.section`
   height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0;
 
+  #cogwheel {
+    color: red;
+  }
+
   img {
-    max-width: 80%;
+    width: 100%;
     margin: 2rem 0 3rem 0;
   }
 
