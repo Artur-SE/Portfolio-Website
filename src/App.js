@@ -17,7 +17,7 @@ function App() {
     <motion.div
       initial="hidden"
       animate="visible"
-      transition={{ duration: 1.5 }}
+      // transition={{ duration: 1.5 }}
       variants={toggleAnimation}
     >
       <Navbar />

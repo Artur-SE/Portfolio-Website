@@ -4,8 +4,9 @@ import React from "react";
 import styled from "styled-components";
 
 // Assets
-import heroImage from "../assets/hero.svg";
 import HeroImage from "./HeroImage";
+
+import { motion } from "framer-motion";
 
 const Home = () => {
   // Return -------------------------------------------------------------------
@@ -25,11 +26,15 @@ const Home = () => {
         {/* <img src={heroImage} alt="responsive design" /> */}
         <HeroImage />
       </div>
-      <div>
+      <motion.div
+      // initial={{ x: "10vw", opacity: 0 }}
+      // animate={{ x: "0", opacity: 1 }}
+      // transition={{ delay: 1 }}
+      >
         <a href="#contact">
           <button className="btn-primary">Kostenlose Beratung</button>
         </a>
-      </div>
+      </motion.div>
     </StyledHero>
   );
   // --------------------------------------------------------------------------
