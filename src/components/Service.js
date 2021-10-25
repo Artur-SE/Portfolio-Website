@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { toggleAnimation } from "../animations/animations";
 
 // Styling
 import styled from "styled-components";
@@ -32,7 +34,12 @@ const Service = ({
         </button>
       </div>
       {showModal && (
-        <div className="fullDescription">
+        <motion.div
+          className="fullDescription"
+          initial="hidden"
+          animate="visible"
+          variants={toggleAnimation}
+        >
           <div className="fullDescription-container">
             <p>{fullDescription}</p>
           </div>
@@ -44,7 +51,7 @@ const Service = ({
               Schließen
             </button>
           </div>
-        </div>
+        </motion.div>
       )}
     </StyledService>
   );

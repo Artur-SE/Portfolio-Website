@@ -76,6 +76,8 @@ TODO ##########################################################################
 
 ANIMATION ---------------------------------------------------------------------
 
+- Framer Motion?
+
 - Hero image animation
 - Service Modal animation
 - Button hover animations

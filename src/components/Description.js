@@ -1,5 +1,7 @@
 import React from "react";
 import { technologies } from "../data/data";
+import { motion } from "framer-motion";
+import { toggleAnimation } from "../animations/animations";
 
 // Styling
 import styled from "styled-components";
@@ -7,7 +9,12 @@ import styled from "styled-components";
 const Description = ({ information }) => {
   if (information === "Technologien") {
     return (
-      <StyledDescription className="description">
+      <motion.div
+        className="description"
+        initial="hidden"
+        animate="visible"
+        variants={toggleAnimation}
+      >
         <p>
           Als erfahrener Verkäufer unterstützt Artur Sie dabei, Ihre Produkte &
           Dienstleistungen zu bewerben und an die richtige Zielgruppe zu
@@ -34,14 +41,17 @@ const Description = ({ information }) => {
           <br />
           Wir freuen uns auf Sie!
         </p>
-      </StyledDescription>
+      </motion.div>
     );
   } else {
     return (
       <StyledTechnologies className="technologies">
         {technologies.map((technology) => {
           return (
-            <img
+            <motion.img
+              initial="hidden"
+              animate="visible"
+              variants={toggleAnimation}
               src={technology.image}
               alt={technology.name}
               key={technology.id}
@@ -53,7 +63,6 @@ const Description = ({ information }) => {
   }
 };
 
-const StyledDescription = styled.div``;
 const StyledTechnologies = styled.div`
   display: grid;
   gap: 25px;

@@ -8,9 +8,18 @@ import Footer from "./components/Footer";
 // Styling
 import styled from "styled-components";
 
+// Animation
+import { motion } from "framer-motion";
+import { toggleAnimation } from "./animations/animations";
+
 function App() {
   return (
-    <div>
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      transition={{ duration: 1.5 }}
+      variants={toggleAnimation}
+    >
       <Navbar />
       <StyledApp>
         <section id="home">
@@ -27,7 +36,7 @@ function App() {
         </section>
       </StyledApp>
       <Footer id="footer" />
-    </div>
+    </motion.div>
   );
 }
 

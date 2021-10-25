@@ -3,6 +3,10 @@ import React from "react";
 // Styling
 import styled from "styled-components";
 
+// Animation
+import { motion } from "framer-motion";
+import { toggleAnimation } from "../animations/animations";
+
 const HeroImage = () => {
   return (
     <StyledSvg
@@ -12,7 +16,7 @@ const HeroImage = () => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="hero">
+      <motion.g id="hero">
         <g id="undraw_In_sync_re_jlqd 1">
           <path
             id="Vector"
@@ -305,7 +309,7 @@ const HeroImage = () => {
             fill="#35363B"
           />
         </g>
-      </g>
+      </motion.g>
     </StyledSvg>
   );
 };
@@ -332,5 +336,3 @@ const StyledSvg = styled.svg`
 `;
 
 export default HeroImage;
-
-// https://www.youtube.com/watch?v=gWai7fYp9PY&t=639s
