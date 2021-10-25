@@ -76,22 +76,7 @@ TODO ##########################################################################
 
 ANIMATION ---------------------------------------------------------------------
 
-1. Mobile background
-2. Tablet background
-3. Desktop background
-4. Mobile Images
-5. Tablet Images
-6. Desktop Images
-7. Mobile Text
-8. Tablet Text
-9. Desktop Text
-10. Mobile Button
-11. Tablet Button
-12. Desktop Button
-
-- Hero image animation
 - Service Modal animation
-- Button hover animations
 - Navbar animation
 -------------------------------------------------------------------------------
 
