@@ -23,18 +23,13 @@ const Home = () => {
           <span> D</span>
           esigns und mehr...
         </h3>
-        {/* <img src={heroImage} alt="responsive design" /> */}
         <HeroImage />
       </div>
-      <motion.div
-      // initial={{ x: "10vw", opacity: 0 }}
-      // animate={{ x: "0", opacity: 1 }}
-      // transition={{ delay: 1 }}
-      >
+      <div>
         <a href="#contact">
           <button className="btn-primary">Kostenlose Beratung</button>
         </a>
-      </motion.div>
+      </div>
     </StyledHero>
   );
   // --------------------------------------------------------------------------
@@ -51,17 +46,11 @@ const StyledHero = styled.section`
   align-items: center;
   margin: 0;
 
-  #cogwheel {
-    color: red;
+  svg {
+    padding-top: 0;
   }
-
-  img {
-    width: 100%;
-    margin: 2rem 0 3rem 0;
-  }
-
-  h1 {
-    margin-top: 10vh;
+  .container {
+    margin-top: clamp(100px, 10vh, 500px);
   }
 
   button {
