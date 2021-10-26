@@ -74,22 +74,14 @@ https://www.youtube.com/watch?v=gWai7fYp9PY
 
 TODO ##########################################################################
 
-ANIMATION ---------------------------------------------------------------------
-
-- Backwards animations
-- Service Modal animation
-- Navbar animation
--------------------------------------------------------------------------------
-
+- Impressum & Datenschutz content
 - Form submit email connection & Response
-- Costum Navbar
+- Custom Navbar
 - Service descriptions
-- Impressum & Datenschutz routes & content
 - Optimizing & Testing
 
 BUGFIXES ----------------------------------------------------------------------
 
-- Navbar Position fix so it won't cover h1 after scoll
 -------------------------------------------------------------------------------
 
 ###############################################################################

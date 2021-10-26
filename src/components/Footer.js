@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Styling
 import styled from "styled-components";
@@ -12,8 +13,12 @@ const Footer = () => {
     <StyledFooter>
       <div className="container">
         <img src={logo} alt="" />
-        <p>Impressum</p>
-        <p>Datenschutz</p>
+        <Link to="/impressum">
+          <p>Impressum</p>
+        </Link>
+        <Link to="datenschutz">
+          <p>Datenschutz</p>
+        </Link>
       </div>
     </StyledFooter>
   );
