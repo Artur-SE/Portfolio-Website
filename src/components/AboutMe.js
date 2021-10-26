@@ -33,9 +33,9 @@ const AboutMe = () => {
           information={information}
           setInformation={setInformation}
         />
-        <a href="#contact">
+        {/* <a href="#contact">
           <button className="btn-primary">Kostenlose Beratung</button>
-        </a>
+        </a> */}
       </div>
     </StyledAboutMe>
   );

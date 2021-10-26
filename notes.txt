@@ -80,7 +80,8 @@ ANIMATION ---------------------------------------------------------------------
 - Navbar animation
 -------------------------------------------------------------------------------
 
-- Form submit email connection
+- Form submit email connection & Response
+- Costum Navbar
 - Service descriptions
 - Impressum & Datenschutz routes & content
 - Optimizing & Testing
