@@ -3,6 +3,10 @@ import React, { useState } from "react";
 // Styling
 import styled from "styled-components";
 
+// Animation
+import { motion, AnimatePresence } from "framer-motion";
+import { toggleNavbar } from "../animations/animations";
+
 // Assets
 import logo from "../assets/logo.svg";
 import navIcon from "../assets/navIcon.svg";
@@ -50,25 +54,36 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="nav-links-mobile">
-          {showDropDown && (
-            <ul onClick={() => setShowNavigation(false)}>
-              <a href="#home">
-                <li>Home</li>
-              </a>
-              <a href="#services">
-                <li>Services</li>
-              </a>
-              <a href="#about">
-                <li>Über uns</li>
-              </a>
-              <a href="#contact">
-                <li>
-                  <span>Kontakt</span>
-                </li>
-              </a>
-            </ul>
-          )}
+        <div>
+          <AnimatePresence>
+            {showDropDown && (
+              <motion.div
+                className="nav-links-mobile"
+                initial="hidden"
+                animate="visible"
+                transition={{ type: "tween" }}
+                variants={toggleNavbar}
+                exit={{ opacity: 0 }}
+              >
+                <ul onClick={() => setShowNavigation(false)}>
+                  <a href="#home">
+                    <li>Home</li>
+                  </a>
+                  <a href="#services">
+                    <li>Services</li>
+                  </a>
+                  <a href="#about">
+                    <li>Über uns</li>
+                  </a>
+                  <a href="#contact">
+                    <li>
+                      <span>Kontakt</span>
+                    </li>
+                  </a>
+                </ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
     </StyledNavbar>

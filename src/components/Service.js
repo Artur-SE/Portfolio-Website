@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { toggleAnimation } from "../animations/animations";
 
 // Styling
@@ -33,26 +33,29 @@ const Service = ({
           Mehr Info
         </button>
       </div>
-      {showModal && (
-        <motion.div
-          className="fullDescription"
-          initial="hidden"
-          animate="visible"
-          variants={toggleAnimation}
-        >
-          <div className="fullDescription-container">
-            <p>{fullDescription}</p>
-          </div>
-          <div>
-            <button
-              className="btn-secondary"
-              onClick={() => setShowModal(false)}
-            >
-              Schließen
-            </button>
-          </div>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {showModal && (
+          <motion.div
+            className="fullDescription"
+            initial="hidden"
+            animate="visible"
+            variants={toggleAnimation}
+            exit={{ opacity: 0 }}
+          >
+            <div className="fullDescription-container">
+              <p>{fullDescription}</p>
+            </div>
+            <div>
+              <button
+                className="btn-secondary"
+                onClick={() => setShowModal(false)}
+              >
+                Schließen
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </StyledService>
   );
 
