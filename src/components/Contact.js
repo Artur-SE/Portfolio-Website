@@ -10,22 +10,25 @@ const Contact = () => {
       <div className="container">
         <h1 className="headline">In Kontakt kommen</h1>
         <div className="underline"></div>
-        <form action="">
-          <label htmlFor="Name">Name</label>
+        <form
+          action="https://formsubmit.co/1542ffadec1df3b4654844686c423a86"
+          method="POST"
+        >
+          <label htmlFor="name">Name</label>
           <br />
           <br />
-          <input required type="text" />
-          <br />
-          <br />
-
-          <label htmlFor="E-mail">E-mail</label>
-          <br />
-          <br />
-          <input required type="email" />
+          <input required type="text" name="name" />
           <br />
           <br />
 
-          <label htmlFor="Name">Nachricht</label>
+          <label htmlFor="email">E-mail</label>
+          <br />
+          <br />
+          <input required type="email" name="email" />
+          <br />
+          <br />
+
+          <label htmlFor="message">Nachricht</label>
           <br />
           <br />
           <textarea required name="message" cols="30" rows="10"></textarea>
