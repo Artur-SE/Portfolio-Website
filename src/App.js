@@ -10,6 +10,7 @@ import Backdrop from "./components/Backdrop";
 import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import Error from "./components/Error";
+import ThankYou from "./components/ThankYou";
 
 // Styling
 import styled from "styled-components";
@@ -23,6 +24,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   const [showBackdrop, setShowBackdrop] = useState(false);
+
+  // Original Verison ---------------------------------------------------------
+
   return (
     <Router>
       <Switch>
@@ -60,12 +64,16 @@ function App() {
         <Route path="/datenschutz">
           <Datenschutz />
         </Route>
+        <Route path="/thankyou">
+          <ThankYou />
+        </Route>
         <Route path="*">
           <Error />
         </Route>
       </Switch>
     </Router>
   );
+  // --------------------------------------------------------------------------
 }
 
 const StyledApp = styled.div`

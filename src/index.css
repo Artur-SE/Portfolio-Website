@@ -139,3 +139,29 @@ a {
   margin: 0;
   padding: 0;
 }
+/* ---------------------------------------------------------------------------- */
+
+/* Scrollbar ------------------------------------------------------------------ */
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--backgroundColor2);
+  border-radius: 0px 0px 10px 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--backgroundColor1);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* ---------------------------------------------------------------------------- */

@@ -14,6 +14,13 @@ const Contact = () => {
           action="https://formsubmit.co/1542ffadec1df3b4654844686c423a86"
           method="POST"
         >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:3000/thankyou"
+          />
+
           <label htmlFor="name">Name</label>
           <br />
           <br />
