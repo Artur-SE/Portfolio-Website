@@ -74,10 +74,10 @@ https://www.youtube.com/watch?v=gWai7fYp9PY
 
 TODO ##########################################################################
 
-- Impressum & Datenschutz content
 - Form submit email connection & Response message
 - Custom Scrollbar
 - Service descriptions
+- Impressum & Datenschutz content
 - Optimizing & Testing
 
 BUGFIXES ----------------------------------------------------------------------
