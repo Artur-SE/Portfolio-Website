@@ -51,7 +51,7 @@ const StyledContact = styled.section`
     background-color: var(--backgroundColor2);
     border: none;
     padding: 1rem;
-    width: clamp(300px, 60vw, 600px);
+    width: clamp(250px, 60vw, 600px);
     resize: none;
   }
 

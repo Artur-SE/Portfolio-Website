@@ -1,9 +1,12 @@
+import React, { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import AboutMe from "./components/AboutMe";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Backdrop from "./components/Backdrop";
 import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import Error from "./components/Error";
@@ -19,6 +22,7 @@ import { toggleAnimation } from "./animations/animations";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
+  const [showBackdrop, setShowBackdrop] = useState(false);
   return (
     <Router>
       <Switch>
@@ -34,7 +38,10 @@ function App() {
                 <Hero />
               </section>
               <section id="services">
-                <Services />
+                <Services
+                  showBackdrop={showBackdrop}
+                  setShowBackdrop={setShowBackdrop}
+                />
               </section>
               <section id="about">
                 <AboutMe />
@@ -44,6 +51,7 @@ function App() {
               </section>
             </StyledApp>
             <Footer id="footer" />
+            {showBackdrop && <Backdrop />}
           </motion.div>
         </Route>
         <Route path="/impressum">

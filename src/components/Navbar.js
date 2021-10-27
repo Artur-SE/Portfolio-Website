@@ -19,7 +19,6 @@ const Navbar = () => {
 
   const toggleNavigation = (e) => {
     setShowNavigation(!showDropDown);
-    console.log(e.target.value);
   };
 
   // Return -------------------------------------------------------------------
@@ -76,9 +75,7 @@ const Navbar = () => {
                     <li>Über uns</li>
                   </a>
                   <a href="#contact">
-                    <li>
-                      <span>Kontakt</span>
-                    </li>
+                    <li>Kontakt</li>
                   </a>
                 </ul>
               </motion.div>
@@ -128,6 +125,7 @@ const StyledNavbar = styled.nav`
     background-color: var(--backgroundColor2);
     position: absolute;
     width: 100%;
+    padding-bottom: 1rem;
   }
   ul {
     margin: 0;

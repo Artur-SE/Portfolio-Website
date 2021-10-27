@@ -30,6 +30,9 @@ const Footer = () => {
 const StyledFooter = styled.section`
   background-color: var(--backgroundColor2);
   padding: 1rem;
+  img {
+    width: 13rem;
+  }
 `;
 // --------------------------------------------------------------------------
 

@@ -64,6 +64,10 @@ const StyledHero = styled.section`
   button {
     margin-top: 0;
   }
+
+  h1 {
+    font-size: clamp(1.3rem, 6vw, 3rem);
+  }
 `;
 // --------------------------------------------------------------------------
 

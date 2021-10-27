@@ -1,15 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Service from "./Service";
 import { services } from "../data/data";
 
 // Styling
 import styled from "styled-components";
 
-const Services = () => {
-  // State --------------------------------------------------------------------
-  // const [items, setServicesItems] = useState(services);
-  // --------------------------------------------------------------------------
-
+const Services = ({ showBackdrop, setShowBackdrop }) => {
   // Return -------------------------------------------------------------------
 
   return (
@@ -19,7 +15,14 @@ const Services = () => {
         <div className="underline"></div>
         <div className="services">
           {services.map((service) => {
-            return <Service key={service.id} {...service} />;
+            return (
+              <Service
+                key={service.id}
+                {...service}
+                showBackdrop={showBackdrop}
+                setShowBackdrop={setShowBackdrop}
+              />
+            );
           })}
         </div>
       </div>

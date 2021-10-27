@@ -11,9 +11,20 @@ const Service = ({
   description2,
   fullDescription,
   image,
+  showBackdrop,
+  setShowBackdrop,
 }) => {
   const [showModal, setShowModal] = useState(false);
-  // Return -----------------------------------------------------------------
+
+  // State --------------------------------------------------------------------
+
+  const toggleModal = () => {
+    setShowBackdrop(!showBackdrop);
+    setShowModal(!showModal);
+  };
+  // --------------------------------------------------------------------------
+
+  // Return -------------------------------------------------------------------
   return (
     <StyledService>
       <div className="service">
@@ -26,10 +37,7 @@ const Service = ({
         </div>
       </div>
       <div>
-        <button
-          className="btn-secondary"
-          onClick={() => setShowModal(!showModal)}
-        >
+        <button className="btn-secondary" onClick={() => toggleModal()}>
           Mehr Info
         </button>
       </div>
@@ -41,15 +49,13 @@ const Service = ({
             animate="visible"
             variants={toggleAnimation}
             exit={{ opacity: 0 }}
+            onClick={() => toggleModal()}
           >
             <div className="fullDescription-container">
               <p>{fullDescription}</p>
             </div>
             <div>
-              <button
-                className="btn-secondary"
-                onClick={() => setShowModal(false)}
-              >
+              <button className="btn-secondary" onClick={() => toggleModal()}>
                 Schließen
               </button>
             </div>
@@ -90,8 +96,7 @@ const StyledService = styled.div`
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
-    /* border: 2px solid var(--primaryColor); */
+    z-index: 5;
     border-radius: 10px;
     overflow-y: auto;
     box-shadow: 1px 5px 20px black;
@@ -99,8 +104,10 @@ const StyledService = styled.div`
       font-size: 1rem;
       line-height: 2rem;
       margin-top: 2rem;
+      padding: 1rem;
     }
   }
+
   @media (min-width: 1023px) {
     p {
       max-width: 600px;
