@@ -37,7 +37,7 @@ const StyledServices = styled.section`
   @media (min-width: 1023px) {
     .services {
       display: grid;
-      gap: 10px;
+      gap: 50px;
       grid-template-columns: 1fr 1fr;
     }
   }

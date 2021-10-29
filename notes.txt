@@ -74,9 +74,8 @@ https://www.youtube.com/watch?v=gWai7fYp9PY
 
 TODO ##########################################################################
 
-- Service descriptions
-- Better Copywriting
 - Impressum & Datenschutz content
+- Better Copywriting
 - Optimizing & Testing
 
 BUGFIXES ----------------------------------------------------------------------

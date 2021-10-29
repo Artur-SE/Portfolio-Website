@@ -24,8 +24,8 @@ const Description = ({ information }) => {
               Zielgruppe zu verkaufen.
               <br />
               <br />
-              Mit seinem zusätzlichen IT Background schafft er es, Ihr Projekt
-              zu realisieren und der ganzen Welt zugänglich zu machen.
+              Mit seinem IT Background realisiert er Ihr Projekt und macht es
+              der ganzen Welt zugänglich.
               <br />
               <br />
               Ein angenehmes Arbeiten und die Zufriedenheit unseren Klienten ist

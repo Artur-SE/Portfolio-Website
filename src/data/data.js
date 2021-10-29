@@ -24,8 +24,11 @@ export const services = [
     description1:
       "Generieren Sie mehr Leads und Sales mit schnellen Websites und frischen Designs!",
     description2: "Auf allen Endgeräten ein reibungsloses Erlebnis",
-    fullDescription:
-      "11111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi recusandae atque necessitatibus alias provident consequuntur architecto, aut vitae reiciendis suscipit minus reprehenderit assumenda quia hic voluptatum maiores fuga laboriosam sequi pariatur nulla dicta aspernatur sit omnis. Ut eligendi odio vero neque cupiditate itaque, labore, vel, natus aut explicabo error veritatis rem nulla tempora? Voluptates natus optio saepe aut sit et, eos eaque, obcaecati in fugit animi. Voluptatibus dolor itaque distinctio perferendis, quia ipsam laudantium alias ipsum corporis amet quidem.",
+    fullDescription1: "Schnelle & benutzerfreundliche Websites. ",
+    fullDescription2:
+      "Der Schlüssel eines erfolgreichen Verkaufs ist es, den Kunden geführt zu beraten und an sein Ziel zu bringen. Dadurch werden idealerweise die Einwände des potenziellen Kunden bereits auf Ihrer Website behandelt und Unsicherheiten abgebaut.",
+    fullDescription3:
+      "Eine gut strukturierte Website schafft den Spagat zwischen Information, Design und Technik, um ein angenehmes Surferlebnis zu bieten. Im Anschluss kommt ein unschlagbares Angebot, das der Besucher nicht ablehnen kann.",
   },
   {
     id: 2,
@@ -34,8 +37,12 @@ export const services = [
     description1: "Tolle Darstellung und überzeugende Produktbeschreibungen!",
     description2:
       "Verkaufspsychologie im Web Format. Synergie aus Verkaufserfahrung & IT.",
-    fullDescription:
-      "22222222222Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi recusandae atque necessitatibus alias provident consequuntur architecto, aut vitae reiciendis suscipit minus reprehenderit assumenda quia hic voluptatum maiores fuga laboriosam sequi pariatur nulla dicta aspernatur sit omnis. Ut eligendi odio vero neque cupiditate itaque, labore, vel, natus aut explicabo error veritatis rem nulla tempora? Voluptates natus optio saepe aut sit et, eos eaque, obcaecati in fugit animi. Voluptatibus dolor itaque distinctio perferendis, quia ipsam laudantium alias ipsum corporis amet quidem.",
+    fullDescription1:
+      "Reibungsloses Shoppen & effektive Produktpräsentationen.",
+    fullDescription2:
+      "Das Auge kauft mit! Eine schöne Visualisierung und detaillierte Produktbeschreibung sind die Grundbausteine eines erfolgreichen Online-Shops.",
+    fullDescription3:
+      "Funktionalität und Tempo sind gefragt. Vielleicht eine 1 Klick & Kauf Option?",
   },
   {
     id: 3,
@@ -45,8 +52,11 @@ export const services = [
       "Geben Sie Ihrer Seite einen frischen Look und neue Features!",
     description2:
       "Wir erneuern auf Wunsch bestimmte Teile Ihres Produkts oder bauen es komplett um.",
-    fullDescription:
-      "33333333Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi recusandae atque necessitatibus alias provident consequuntur architecto, aut vitae reiciendis suscipit minus reprehenderit assumenda quia hic voluptatum maiores fuga laboriosam sequi pariatur nulla dicta aspernatur sit omnis. Ut eligendi odio vero neque cupiditate itaque, labore, vel, natus aut explicabo error veritatis rem nulla tempora? Voluptates natus optio saepe aut sit et, eos eaque, obcaecati in fugit animi. Voluptatibus dolor itaque distinctio perferendis, quia ipsam laudantium alias ipsum corporis amet quidem.",
+    fullDescription1: "Moderne Design Trends & individuelle Styles.",
+    fullDescription2:
+      "Ein neuer Anstrich für überholte Websites & Programme. Wir verschaffen Ihren Kunden ein modernes Interaktionserlebnis!",
+    fullDescription3:
+      "Eine aktuelle & frische Darstellung auf allen Endgeräten wirken professionell und bauen Vertrauen bei Ihren Kunden auf.",
   },
   {
     id: 4,
@@ -55,8 +65,11 @@ export const services = [
     description1: "Schnelle und gutaussehende Web Applikationen!",
     description2:
       "Intuitive und kundenfreundliche Nutzeroberflächen und vielfältige Funktionalität.",
-    fullDescription:
-      "4444444444Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi modi recusandae atque necessitatibus alias provident consequuntur architecto, aut vitae reiciendis suscipit minus reprehenderit assumenda quia hic voluptatum maiores fuga laboriosam sequi pariatur nulla dicta aspernatur sit omnis. Ut eligendi odio vero neque cupiditate itaque, labore, vel, natus aut explicabo error veritatis rem nulla tempora? Voluptates natus optio saepe aut sit et, eos eaque, obcaecati in fugit animi. Voluptatibus dolor itaque distinctio perferendis, quia ipsam laudantium alias ipsum corporis amet quidem.",
+    fullDescription1: "Sie haben eine tolle Idee für ein Programm?",
+    fullDescription2:
+      "Wir beraten & bauen Ihr Wunschprojekt. Mit neuesten Technologien und Methoden gelingt das Erreichen tollen Features und einer top Performance.",
+    fullDescription3:
+      '"Das ist eine gute Geschäftsidee, aber Ich bin kein Programmierer". Genau dafür sind wir da!',
   },
 ];
 

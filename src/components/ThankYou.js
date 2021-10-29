@@ -17,9 +17,6 @@ const ThankYou = () => {
           <br />
           <br />
           Wir werden uns sobald wie möglich bei Ihnen melden.
-          <br />
-          <br />
-          Liebe Grüße, Artur Klein
         </h1>
         <Link to="/">
           <button className="btn-secondary">Home</button>

@@ -9,7 +9,9 @@ const Service = ({
   name,
   description1,
   description2,
-  fullDescription,
+  fullDescription1,
+  fullDescription2,
+  fullDescription3,
   image,
   showBackdrop,
   setShowBackdrop,
@@ -52,7 +54,9 @@ const Service = ({
             onClick={() => toggleModal()}
           >
             <div className="fullDescription-container">
-              <p>{fullDescription}</p>
+              <p>{fullDescription1}</p>
+              <p>{fullDescription2}</p>
+              <p>{fullDescription3}</p>
             </div>
             <div>
               <button className="btn-secondary" onClick={() => toggleModal()}>
@@ -100,17 +104,19 @@ const StyledService = styled.div`
     border-radius: 10px;
     overflow-y: auto;
     box-shadow: 1px 5px 20px black;
+
     p {
       font-size: 1rem;
-      line-height: 2rem;
-      margin-top: 2rem;
       padding: 1rem;
+    }
+    button {
+      margin: 1rem;
     }
   }
 
   @media (min-width: 1023px) {
     p {
-      max-width: 600px;
+      max-width: 500px;
     }
     .fullDescription {
       padding: 3rem;
