@@ -62,7 +62,7 @@ function App() {
         <Route path="/datenschutz">
           <Datenschutz />
         </Route>
-        <Route path="/thankyou">
+        <Route exact path="https://www.klein-consulting.tech/thankyou">
           <ThankYou />
         </Route>
         <Route path="*">
