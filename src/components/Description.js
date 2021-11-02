@@ -19,22 +19,19 @@ const Description = ({ information }) => {
             exit={{ opacity: 0 }}
           >
             <p>
-              Als erfahrener Verkäufer unterstützt Artur Sie dabei, Ihre
+              Mit unserer Verkaufserfahrung unterstützen wir Sie dabei, Ihre
               Produkte & Dienstleistungen zu bewerben und an die richtige
               Zielgruppe zu verkaufen.
               <br />
               <br />
-              Mit seinem IT Background realisiert er Ihr Projekt und macht es
-              der ganzen Welt zugänglich.
+              Durch moderne Technologien realisieren wir Ihr Projekt und machen
+              es der ganzen Welt zugänglich.
               <br />
               <br />
               Ein angenehmes Arbeiten und die Zufriedenheit unseren Klienten ist
-              uns sehr wichtig.
-              <br />
-              <br />
-              Weshalb wir einen großen Wert darauf legen, die Zielsetzung und
-              Herausforderung eines jeden Projektes gänzlich zu verstehen und zu
-              meistern.
+              uns sehr wichtig. Weshalb wir einen großen Wert darauf legen, die
+              Zielsetzung und Herausforderung eines jeden Projektes gänzlich zu
+              verstehen und zu meistern.
               <br />
               <br />
               Haben Sie Fragen oder Ideen für ein Projekt? Vielleicht haben Sie

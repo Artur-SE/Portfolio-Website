@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <StyledContact>
       <div className="container">
-        <h1 className="headline">In Kontakt kommen</h1>
+        <h1 className="headline">Kontakt</h1>
         <div className="underline"></div>
         <form
           action="https://formsubmit.co/1542ffadec1df3b4654844686c423a86"
