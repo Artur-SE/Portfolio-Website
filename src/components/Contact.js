@@ -18,7 +18,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="https://klein-consulting.tech/thankyou"
+            value="http://klein-consulting.tech/thankyou"
           />
 
           <label htmlFor="name">Name</label>
