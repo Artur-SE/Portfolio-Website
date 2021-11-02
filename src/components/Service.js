@@ -16,9 +16,12 @@ const Service = ({
   showBackdrop,
   setShowBackdrop,
 }) => {
-  const [showModal, setShowModal] = useState(false);
-
   // State --------------------------------------------------------------------
+
+  const [showModal, setShowModal] = useState(false);
+  // --------------------------------------------------------------------------
+
+  // Functions ----------------------------------------------------------------
 
   const toggleModal = () => {
     setShowBackdrop(!showBackdrop);
@@ -114,6 +117,8 @@ const StyledService = styled.div`
     }
   }
 
+  /* Widescreen View ---------------------------------------------------------- */
+
   @media (min-width: 1023px) {
     p {
       max-width: 500px;
@@ -124,6 +129,7 @@ const StyledService = styled.div`
       height: auto;
     }
   }
+  /* -------------------------------------------------------------------------- */
 `;
 // --------------------------------------------------------------------------
 

@@ -5,6 +5,7 @@ import styled from "styled-components";
 
 const Contact = () => {
   // Return -------------------------------------------------------------------
+
   return (
     <StyledContact>
       <div className="container">

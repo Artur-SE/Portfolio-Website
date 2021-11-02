@@ -7,6 +7,8 @@ import { toggleAnimation } from "../animations/animations";
 import styled from "styled-components";
 
 const Description = ({ information }) => {
+  // Return -------------------------------------------------------------------
+
   if (information === "Technologien") {
     return (
       <StyledDescription>
@@ -66,7 +68,10 @@ const Description = ({ information }) => {
       </AnimatePresence>
     );
   }
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledDescription = styled.div`
   p {
@@ -87,5 +92,6 @@ const StyledTechnologies = styled.div`
     margin: 0 auto;
   }
 `;
+// ----------------------------------------------------------------------------
 
 export default Description;

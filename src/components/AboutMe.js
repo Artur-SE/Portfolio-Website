@@ -6,7 +6,12 @@ import Description from "./Description";
 import styled from "styled-components";
 
 const AboutMe = () => {
+  // State --------------------------------------------------------------------
+
   const [information, setInformation] = useState("Technologien");
+  // --------------------------------------------------------------------------
+
+  // Functions ----------------------------------------------------------------
 
   const toggleInformation = () => {
     if (information === "Technologien") {
@@ -15,6 +20,7 @@ const AboutMe = () => {
       setInformation("Technologien");
     }
   };
+  // --------------------------------------------------------------------------
 
   // Return -------------------------------------------------------------------
   return (

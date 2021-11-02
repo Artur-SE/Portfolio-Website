@@ -7,6 +7,8 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const HeroImage = () => {
+  // Return -------------------------------------------------------------------
+
   return (
     <StyledSvg
       width="288"
@@ -396,7 +398,10 @@ const HeroImage = () => {
       </g>
     </StyledSvg>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledSvg = styled.svg`
   width: 80vw;
@@ -418,5 +423,6 @@ const StyledSvg = styled.svg`
     }
   }
 `;
+// ----------------------------------------------------------------------------
 
 export default HeroImage;

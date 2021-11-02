@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { backdrop } from "../animations/animations";
 
 const Backdrop = () => {
+  // Return -------------------------------------------------------------------
+
   return (
     <AnimatePresence>
       <StyledBackdrop>
@@ -19,7 +21,10 @@ const Backdrop = () => {
       </StyledBackdrop>
     </AnimatePresence>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledBackdrop = styled.div`
   .backdrop {
@@ -31,5 +36,6 @@ const StyledBackdrop = styled.div`
     background-color: var(--backgroundColor1);
   }
 `;
+// ----------------------------------------------------------------------------
 
 export default Backdrop;

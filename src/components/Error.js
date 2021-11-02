@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { toggleAnimation } from "../animations/animations";
 
 const Error = () => {
+  // Return -------------------------------------------------------------------
+
   return (
     <StyledError>
       <motion.div initial="hidden" animate="visible" variants={toggleAnimation}>
@@ -20,7 +22,10 @@ const Error = () => {
       </motion.div>
     </StyledError>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledError = styled.div`
   margin: 0 auto;
@@ -32,4 +37,6 @@ const StyledError = styled.div`
   justify-content: center;
   align-items: center;
 `;
+// ----------------------------------------------------------------------------
+
 export default Error;

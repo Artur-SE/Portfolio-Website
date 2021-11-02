@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { toggleAnimation } from "../animations/animations";
 
 const Impressum = () => {
+  // Return ---------------------------------------------------------------------
+
   return (
     <StyledImpressum>
       <motion.div initial="hidden" animate="visible" variants={toggleAnimation}>
@@ -53,12 +55,15 @@ const Impressum = () => {
       </motion.div>
     </StyledImpressum>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledImpressum = styled.div`
   margin: 0 auto;
   max-width: var(--maxWidth);
-  /* text-align: center; */
 `;
+// ----------------------------------------------------------------------------
 
 export default Impressum;

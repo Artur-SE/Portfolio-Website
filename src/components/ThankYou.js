@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { toggleAnimation } from "../animations/animations";
 
 const ThankYou = () => {
+  // Return -------------------------------------------------------------------
+
   return (
     <StyledThankYou>
       <motion.div initial="hidden" animate="visible" variants={toggleAnimation}>
@@ -24,7 +26,10 @@ const ThankYou = () => {
       </motion.div>
     </StyledThankYou>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledThankYou = styled.div`
   margin: 0 auto;
@@ -36,5 +41,6 @@ const StyledThankYou = styled.div`
   justify-content: center;
   align-items: center;
 `;
+// ----------------------------------------------------------------------------
 
 export default ThankYou;

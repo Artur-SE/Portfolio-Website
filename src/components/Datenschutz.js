@@ -9,6 +9,8 @@ import { motion } from "framer-motion";
 import { toggleAnimation } from "../animations/animations";
 
 const Datenschutz = () => {
+  // Return -------------------------------------------------------------------
+
   return (
     <StyledDatenschutz>
       <motion.div initial="hidden" animate="visible" variants={toggleAnimation}>
@@ -301,11 +303,15 @@ const Datenschutz = () => {
       </motion.div>
     </StyledDatenschutz>
   );
+  // --------------------------------------------------------------------------
 };
+
+// Styled Component -----------------------------------------------------------
 
 const StyledDatenschutz = styled.div`
   margin: 0 auto;
   max-width: var(--maxWidth);
 `;
+// ----------------------------------------------------------------------------
 
 export default Datenschutz;
