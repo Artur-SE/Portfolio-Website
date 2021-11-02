@@ -18,7 +18,7 @@ const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:3000/thankyou"
+            value="https://klein-consulting.tech/thankyou"
           />
 
           <label htmlFor="name">Name</label>
