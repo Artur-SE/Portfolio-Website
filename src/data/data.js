@@ -28,7 +28,7 @@ export const services = [
     fullDescription2:
       "Der Schlüssel eines erfolgreichen Verkaufs ist es, den Kunden geführt zu beraten und an sein Ziel zu bringen. Dadurch werden idealerweise die Einwände des potenziellen Kunden bereits auf Ihrer Website behandelt und Unsicherheiten abgebaut.",
     fullDescription3:
-      "Eine gut strukturierte Website schafft den Spagat zwischen Information, Design und Technik, um ein angenehmes Surferlebnis zu bieten. Im Anschluss kommt ein unschlagbares Angebot, das der Besucher nicht ablehnen kann.",
+      "Eine gut strukturierte Website schafft den Spagat zwischen Information, Design und Technik, um ein angenehmes Surferlebnis zu bieten. Im Anschluss kommt ein unschlagbares Angebot, das Ihre Besucher nicht ablehnen können.",
   },
   {
     id: 2,
@@ -67,7 +67,7 @@ export const services = [
       "Intuitive und kundenfreundliche Nutzeroberflächen und vielfältige Funktionalität.",
     fullDescription1: "Sie haben eine tolle Idee für ein Programm?",
     fullDescription2:
-      "Wir beraten & bauen Ihr Wunschprojekt. Mit neuesten Technologien und Methoden gelingt das Erreichen tollen Features und einer top Performance.",
+      "Wir beraten & bauen Ihr Wunschprojekt. Mit neuesten Technologien und Methoden gelingen tolle Features und eine top Performance.",
     fullDescription3:
       '"Das ist eine gute Geschäftsidee, aber Ich bin kein Programmierer". Genau dafür sind wir da!',
   },

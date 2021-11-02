@@ -7,8 +7,8 @@ import { backdrop } from "../animations/animations";
 
 const Backdrop = () => {
   return (
-    <StyledBackdrop>
-      <AnimatePresence>
+    <AnimatePresence>
+      <StyledBackdrop>
         <motion.div
           className="backdrop"
           initial="hidden"
@@ -16,8 +16,8 @@ const Backdrop = () => {
           variants={backdrop}
           exit={{ opacity: 0 }}
         ></motion.div>
-      </AnimatePresence>
-    </StyledBackdrop>
+      </StyledBackdrop>
+    </AnimatePresence>
   );
 };
 
@@ -29,12 +29,6 @@ const StyledBackdrop = styled.div`
     top: 0;
     z-index: 1;
     background-color: var(--backgroundColor1);
-  }
-
-  @media (min-width: 1023px) {
-    h1 {
-      font-size: 5rem;
-    }
   }
 `;
 

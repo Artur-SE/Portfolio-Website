@@ -306,7 +306,6 @@ const Datenschutz = () => {
 const StyledDatenschutz = styled.div`
   margin: 0 auto;
   max-width: var(--maxWidth);
-  text-align: center;
 `;
 
 export default Datenschutz;

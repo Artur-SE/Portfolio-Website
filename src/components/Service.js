@@ -103,7 +103,7 @@ const StyledService = styled.div`
     z-index: 5;
     border-radius: 10px;
     overflow-y: auto;
-    box-shadow: 1px 5px 20px black;
+    box-shadow: 1px 1px 20px;
 
     p {
       font-size: 1rem;

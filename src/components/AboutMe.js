@@ -23,7 +23,7 @@ const AboutMe = () => {
         <h1 className="headline">Ihr Ansprechpartner</h1>
         <div className="underline"></div>
         <img src={artur} alt="" />
-        <h2 className="name">Artur Klein</h2>
+        <h3 className="name">Artur Klein</h3>
         <div>
           <button className="btn-secondary" onClick={toggleInformation}>
             {information}

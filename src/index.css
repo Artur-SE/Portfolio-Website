@@ -122,8 +122,8 @@ section {
 
 .underline {
   height: 5px;
-  width: 60px;
-  background-color: var(--secondaryColor);
+  width: 50%;
+  background-color: var(--backgroundColor2);
   margin: 0 auto;
   border-radius: 10px;
   margin-bottom: 3em;
@@ -138,6 +138,10 @@ a {
   text-decoration: none;
   margin: 0;
   padding: 0;
+}
+
+.headline {
+  font-size: clamp(1.3rem, 6vw, 2.5rem);
 }
 /* ---------------------------------------------------------------------------- */
 

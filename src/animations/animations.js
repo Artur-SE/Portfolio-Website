@@ -10,5 +10,5 @@ export const toggleNavbar = {
 
 export const backdrop = {
   hidden: { opacity: 0 },
-  visible: { opacity: 0.8 },
+  visible: { opacity: 0.9 },
 };

@@ -25,8 +25,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   const [showBackdrop, setShowBackdrop] = useState(false);
 
-  // Original Verison ---------------------------------------------------------
-
   return (
     <Router>
       <Switch>
@@ -73,7 +71,6 @@ function App() {
       </Switch>
     </Router>
   );
-  // --------------------------------------------------------------------------
 }
 
 const StyledApp = styled.div`

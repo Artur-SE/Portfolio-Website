@@ -74,7 +74,10 @@ https://www.youtube.com/watch?v=gWai7fYp9PY
 
 TODO ##########################################################################
 
-- Impressum & Datenschutz content
+- Title
+- Update Logo
+- Favicon
+- Fetching data from github API about my profile
 - Better Copywriting
 - Optimizing & Testing
 
