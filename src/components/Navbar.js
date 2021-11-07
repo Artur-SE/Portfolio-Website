@@ -95,6 +95,7 @@ const Navbar = () => {
 
 const StyledNavbar = styled.nav`
   box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+
   z-index: 1;
   position: fixed;
   width: 100%;
