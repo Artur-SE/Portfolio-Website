@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import artur from "../assets/artur 1.png";
+import artur from "../assets/artur 1-compressed.png";
 import Description from "./Description";
 
 // Styling
