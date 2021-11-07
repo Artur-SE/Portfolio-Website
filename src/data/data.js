@@ -1,9 +1,8 @@
+// Assets
 import websites from "../assets/websites.svg";
 import eCommerce from "../assets/e-commerce.svg";
 import webDesign from "../assets/web-design.svg";
 import webApps from "../assets/web-apps.svg";
-
-// Assets
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import js from "../assets/js.svg";

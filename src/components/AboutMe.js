@@ -52,7 +52,7 @@ const AboutMe = () => {
 
 const StyledAboutMe = styled.section`
   img {
-    max-width: 200px;
+    max-width: 150px;
   }
   h2 {
     color: var(--textColor1);
@@ -63,6 +63,11 @@ const StyledAboutMe = styled.section`
   }
   .name {
     margin-bottom: 0;
+  }
+  @media (min-width: 1023px) {
+    img {
+      max-width: 200px;
+    }
   }
 `;
 // --------------------------------------------------------------------------
