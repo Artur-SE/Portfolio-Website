@@ -65,7 +65,7 @@ const StyledHero = styled.section`
   }
 
   h1 {
-    font-size: clamp(1.3rem, 6vw, 3rem);
+    font-size: clamp(1.7rem, 6vw, 3rem);
   }
 `
 // --------------------------------------------------------------------------
