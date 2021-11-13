@@ -1,10 +1,10 @@
-import React from "react";
+import React from "react"
 
 // Styling
-import styled from "styled-components";
+import styled from "styled-components"
 
 // Assets
-import HeroImage from "./HeroImage";
+import HeroImage from "./HeroImage"
 
 const Home = () => {
   // Return -------------------------------------------------------------------
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <StyledHero>
       <div className="container">
-        <h1>Wir bauen & unterstützen Ihr Traumprojekt</h1>
+        <h1>Wir bauen Ihr IT-Projekt</h1>
         <h3>
           <span>W</span>
           ebsites,
@@ -29,10 +29,9 @@ const Home = () => {
         </a>
       </div>
     </StyledHero>
-  );
+  )
   // --------------------------------------------------------------------------
-};
-
+}
 // Styled Component -----------------------------------------------------------
 
 const StyledHero = styled.section`
@@ -68,7 +67,7 @@ const StyledHero = styled.section`
   h1 {
     font-size: clamp(1.3rem, 6vw, 3rem);
   }
-`;
+`
 // --------------------------------------------------------------------------
 
-export default Home;
+export default Home

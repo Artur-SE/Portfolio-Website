@@ -1,27 +1,27 @@
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 // Styling
-import styled from "styled-components";
+import styled from "styled-components"
 
 // Animation
-import { motion, AnimatePresence } from "framer-motion";
-import { toggleNavbar } from "../animations/animations";
+import { motion, AnimatePresence } from "framer-motion"
+import { toggleNavbar } from "../animations/animations"
 
 // Assets
-import logo from "../assets/logo.svg";
-import navIcon from "../assets/navIcon.svg";
+import logo from "../assets/logo.svg"
+import navIcon from "../assets/navIcon.svg"
 
 const Navbar = () => {
   // State --------------------------------------------------------------------
 
-  const [showDropDown, setShowNavigation] = useState(false);
+  const [showDropDown, setShowNavigation] = useState(false)
   // --------------------------------------------------------------------------
 
   // Functions ----------------------------------------------------------------
 
   const toggleNavigation = (e) => {
-    setShowNavigation(!showDropDown);
-  };
+    setShowNavigation(!showDropDown)
+  }
   // --------------------------------------------------------------------------
 
   // Return -------------------------------------------------------------------
@@ -87,9 +87,9 @@ const Navbar = () => {
         </div>
       </nav>
     </StyledNavbar>
-  );
+  )
   // --------------------------------------------------------------------------
-};
+}
 
 // Styled Component -----------------------------------------------------------
 
@@ -171,8 +171,8 @@ const StyledNavbar = styled.nav`
     }
   }
   /* -------------------------------------------------------------------------- */
-`;
+`
 
-export default Navbar;
+export default Navbar
 
 // https://www.youtube.com/watch?v=S-JyJCVx_4Y
