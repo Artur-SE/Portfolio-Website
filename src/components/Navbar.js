@@ -94,7 +94,7 @@ const Navbar = () => {
 // Styled Component -----------------------------------------------------------
 
 const StyledNavbar = styled.nav`
-  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.25);
 
   z-index: 1;
   position: fixed;
@@ -127,7 +127,7 @@ const StyledNavbar = styled.nav`
   }
 
   .nav-links-mobile {
-    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 5px 5px 0px rgba(0, 0, 0, 0.25);
     background-color: var(--backgroundColor2);
     position: absolute;
     width: 100%;
