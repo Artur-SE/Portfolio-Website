@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 // Styling
 import styled from "styled-components"
@@ -15,6 +15,8 @@ const Navbar = () => {
   // State --------------------------------------------------------------------
 
   const [showDropDown, setShowNavigation] = useState(false)
+  const [theme, setTheme] = useState("dark-theme")
+
   // --------------------------------------------------------------------------
 
   // Functions ----------------------------------------------------------------
@@ -22,6 +24,18 @@ const Navbar = () => {
   const toggleNavigation = (e) => {
     setShowNavigation(!showDropDown)
   }
+
+  const toggleTheme = () => {
+    if (theme === "light-theme") {
+      setTheme("dark-theme")
+    } else {
+      setTheme("light-theme")
+    }
+  }
+
+  useEffect(() => {
+    document.documentElement.className = theme
+  }, [theme])
   // --------------------------------------------------------------------------
 
   // Return -------------------------------------------------------------------
@@ -41,6 +55,9 @@ const Navbar = () => {
             className="navIcon"
           />
           <ul className="nav-links-wideScreen">
+            {/* <button className="btn-secondary" onClick={toggleTheme}>
+              Toggle
+            </button> */}
             <a href="#home">
               <li>Home</li>
             </a>
@@ -100,6 +117,10 @@ const StyledNavbar = styled.nav`
   position: fixed;
   width: 100%;
   background-color: var(--backgroundColor2);
+
+  button {
+    margin: 0rem 1rem;
+  }
 
   nav {
     margin: 0 auto;
@@ -174,5 +195,3 @@ const StyledNavbar = styled.nav`
 `
 
 export default Navbar
-
-// https://www.youtube.com/watch?v=S-JyJCVx_4Y

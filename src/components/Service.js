@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { toggleAnimation } from "../animations/animations";
+import React, { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { toggleAnimation } from "../animations/animations"
 
 // Styling
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Service = ({
   name,
@@ -18,15 +18,15 @@ const Service = ({
 }) => {
   // State --------------------------------------------------------------------
 
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(false)
   // --------------------------------------------------------------------------
 
   // Functions ----------------------------------------------------------------
 
   const toggleModal = () => {
-    setShowBackdrop(!showBackdrop);
-    setShowModal(!showModal);
-  };
+    setShowBackdrop(!showBackdrop)
+    setShowModal(!showModal)
+  }
   // --------------------------------------------------------------------------
 
   // Return -------------------------------------------------------------------
@@ -70,10 +70,10 @@ const Service = ({
         )}
       </AnimatePresence>
     </StyledService>
-  );
+  )
 
   // --------------------------------------------------------------------------
-};
+}
 
 // Styled Components ----------------------------------------------------------
 
@@ -130,7 +130,7 @@ const StyledService = styled.div`
     }
   }
   /* -------------------------------------------------------------------------- */
-`;
+`
 // --------------------------------------------------------------------------
 
-export default Service;
+export default Service

@@ -5,13 +5,31 @@ Global Styling
 */
 
 :root {
+  /* --backgroundColor1: #27292e;
+  --backgroundColor2: #35363b;
+  --primaryColor: #07aaf5;
+  --secondaryColor: #db2c40;
+  --textColor1: #ffffff;
+  --textColor2: #d4d4d5; */
+  --maxWidth: 1300px;
+}
+
+.dark-theme {
   --backgroundColor1: #27292e;
   --backgroundColor2: #35363b;
   --primaryColor: #07aaf5;
   --secondaryColor: #db2c40;
   --textColor1: #ffffff;
   --textColor2: #d4d4d5;
-  --maxWidth: 1300px;
+}
+
+.light-theme {
+  --backgroundColor1: #e3e5ec;
+  --backgroundColor2: #35363b;
+  --primaryColor: #07aaf5;
+  --secondaryColor: #db2c40;
+  --textColor1: #ffffff;
+  --textColor2: #d4d4d5;
 }
 
 html {
